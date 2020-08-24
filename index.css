@@ -1,0 +1,542 @@
+body {
+  background-color:#03001e;
+}
+
+
+
+
+/* // MENU */
+.hamburguesa {
+   display: none;
+}
+.hamburguesa:focus + .navegador {
+   display: block;
+}
+.cabecera {
+   margin: 20px 20px;
+   width: 100%;
+}
+.navegador {
+   width: 100%;
+   height: 15vh;
+   background: #03001e; 
+   background: -webkit-linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e);  
+   background: linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e); 
+   display: flex;
+}
+.menu {
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+.logo {
+   width: 100px;
+   height: 100px;
+}
+.menu li {
+   list-style: none;
+   transition-property: transform;
+   transition-duration: 0.5s;
+   transition-timing-function: ease;
+   transform: scale(1);
+}
+.menu li:hover {
+   transform: scale(1.2);
+}
+.menu li a{
+   text-decoration: none;
+   color: white;
+   font-family:'Squada One', cursive;
+   font-size: 34px;
+}
+
+
+
+
+
+/* // NOMBRE FESTIVAL */
+.nombreFestival {
+   background-image: url(./festival11.jpg);
+   background-position: 50% 50%;
+   margin: 20px 20px;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+@keyframes titulo {
+   0% { 
+       color: #fdeff9;
+   }
+   50% {
+       color: #ec38bc;
+   }
+   100%{
+       color: #7303c0;
+   }
+}
+.nombreFestival .titulo {
+   font-family: 'Monoton', cursive;
+   font-size: 100px;
+   animation-name: titulo;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+   text-align: center;
+}
+
+
+
+
+/* // GALERIA FOTOS */
+.tituloGaleria {
+   font-family:'Monoton', cursive;
+   font-size: 50px;
+   color: #ec38bc;
+   text-align: center;
+   margin-top: 10vh;
+}
+.inicio {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+
+.galeria {
+   width: 80%;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 300px 300px 300px;
+   gap: 100px 100px;
+}
+.uno {
+   grid-column: 1/1;
+   grid-row: 1/1;
+   background-image: url(./festival1.jpg);
+   background-position: center;
+}
+.dos {
+   grid-column: 2/2;
+   grid-row: 1/1;
+   background-image: url(./festival2.jpg);
+   background-position: center;
+}
+.tres {
+   grid-column: 1/1;
+   grid-row: 2/2;
+   background-image: url(./festival7.jpg);
+   background-position: center;
+}
+.cuatro {
+   grid-column: 2/2;
+   grid-row: 2/2;
+   background-image: url(./festival4.jpg);
+   background-position: center;
+}
+.cinco {
+   grid-column: 1/3;
+   grid-row: 3/3;
+   background-image: url(./festival10.jpg);
+   background-position: 50% 65%;
+}
+/* // ARTISTAS */
+.artistas {
+   text-align: center;
+   font-size: 50px;
+   font-family: 'Monoton', cursive;
+   color: #ec38bc;
+}
+.contenedorArtistas {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+.fotosArtistas {
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.fotosArtistas div {
+   height: 750px;
+   background-color: #05012e;
+   border: 10px solid;
+   margin: 1vh;
+   animation-name: titulo3;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+}
+.fotosArtistas .monolink img {
+   width: 780px;
+}
+@keyframes titulo3 {
+   0% { 
+       color: #fdeff9;
+   }
+   50% {
+       color: #ec38bc;
+   }
+   100%{
+       color: #7303c0;
+   }
+}  
+
+.fotosArtistas div img {
+   width: 375px;
+   height: 375px;
+}
+.fotosArtistas div h3 {
+   text-align: center;
+   color: white;
+   font-family: 'Squada One', cursive;
+   font-size: 100px;
+   animation-name: titulo2;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+}
+@keyframes titulo2 {
+   0% { 
+       color: #fdeff9;
+   }
+   50% {
+       color: #ec38bc;
+   }
+   100%{
+       color: #7303c0;
+   }
+}  
+
+
+
+
+
+/* // FECHAS */
+
+.contenedorFechas {
+   background-image: url(./astronaut-lost-in-space_3840x2160_xtrafondos.com.jpg);
+   background-position: 50% 35%;
+   width: 100%;
+   height: 100vh;
+   text-align: center;
+   color: #f58dd9;
+   text-shadow: 0.06em 0.06em #ec38bc;
+   font-family: 'Squada One', cursive;
+   font-size: 100px;
+}
+
+
+/* // COMPRAR */
+.comprar {
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   flex-wrap: wrap;
+}
+.texto1 {
+   width: 39%;
+   height: 50vh;
+}
+.texto1 h3 {
+   font-size: 80px;
+   font-family: 'Squada One', cursive;
+   color: #f58dd9;
+   margin-top: 5px;
+   text-align: center;
+}
+.texto1 p {
+   font-size: 32px;
+   font-family: 'Squada One', cursive;
+   color: #f58dd9;
+   margin-top: 5px;
+   text-align: center;
+}
+.imagen1 {
+   width: 60%;
+   height: 50vh;
+   background-image: url(./imagen1.jpg);
+   background-size: cover;
+   background-position: 50% 50%;
+}
+.imagen2 {
+   width: 60%;
+   height: 50vh;
+   background-image: url(imagen3.jpg);
+   background-size: cover;
+   background-position: 65% 50%;
+}
+.texto2 {
+   width: 39%;
+   height: 50vh;
+   padding-left: 10px;
+}
+.texto2 p {
+   font-size: 22px;
+   font-family: 'Squada One', cursive;
+   color: #f58dd9;
+   margin-top: 2px;
+}
+.texto2 select {
+   border: transparent;
+   border-bottom: 2px solid #ec38bc;
+   background-color: transparent;
+   padding: 2px;
+   font-size: 20px;
+   color: #f58dd9;
+   font-family: 'Squada One', cursive;
+}
+.texto2 .botonComprar {
+   background-color: #f58dd9;
+   border-color: transparent;
+   border-radius: 30px;
+   color: white;
+   font-family: 'Squada One', cursive;
+   font-size: 20px;
+   transition-property: transform;
+   transition-duration: 0.5s;
+   transition-timing-function: ease;
+   transform: scale(1);
+}
+.texto2 .botonComprar:hover {
+   transform: scale(1.2);
+}
+.texto2 .botonComprar:focus {
+   transform: scale(1); 
+}
+
+
+
+
+/* // FOOTER */
+.footer {
+   background: #03001e; 
+   background: -webkit-linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e);  
+   background: linear-gradient(to right, #fdeff9, #ec38bc, #7303c0, #03001e); 
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+}
+.footer h3 {
+   font-family: 'Squada One', cursive;
+   font-size: 32px;
+   text-align: center;
+   color: #05012e;
+}
+.footer a {
+   text-decoration: none;
+   color: #05012e;
+   font-size: 24px;
+   font-family: 'Squada One', cursive;
+}
+.footer a:hover {
+   border-bottom: solid 2px #05012e;
+}
+.navegacion .menuFooter {
+   list-style: none;
+}
+.social a {
+   margin-left: 5px;
+}
+.logoFooter img {
+   width: 180px;
+   height: 180px;
+}
+
+
+/* // LOGIN */
+.padre{
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.contenedor{
+   display: flex;
+   flex-direction: column;
+   width: 22%;
+   height: 60%;
+   background-color:white;
+   border-radius: 30px;
+}
+.contenedor .in {
+   text-align: center;
+   font-family: 'Squada One', cursive;
+}
+
+.icon{
+   display: flex;
+   justify-content: center;
+}
+.icono{
+   font-size: 100px;
+   color: #ec38bc;
+}
+.formulario {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.formulario input {
+   width: 80%;
+   margin-bottom: 3vh;
+   padding: 5px 5px;
+   border-color: transparent;
+   border-bottom-color: #ec38bc;
+   font-family: 'Squada One', cursive;
+   font-size: large;
+   transition-property: transform;
+   transition-duration: 0.5s;
+   transition-timing-function: ease;
+   transform: scale(1);
+}
+.formulario input:hover {
+   transform: scale(1.08);
+}
+.formulario input:focus {
+   transform: scale(1);
+}
+.formulario .submit {
+   background-color: transparent;
+   border-radius: 30px;
+   background-color: #f58dd9;
+   border-bottom-color: transparent;
+}
+.formulario .forgot {
+   background-color: transparent;
+   border-radius: 30px;
+   background-color: #f58dd9;
+   border-bottom-color: transparent;
+}
+/* // MEDIA */
+@media (max-width: 500px){
+   /* // MENU */
+   .navegador {
+       width: 70%;
+       height: 40vh;
+       background: transparent;
+   }
+   .menu {
+       flex-direction: column;
+       justify-content: flex-start;
+   }
+   .hamburguesa {
+       display: block;
+       font-size: 40px;
+       color: #ec38bc;
+       background-color: transparent;
+       border: transparent;
+   }
+   .navegador {
+       display: none;
+   }
+   .navegador ul {
+       flex-direction: column;
+   }
+   .menu li a{
+       font-size: 30px;
+       color: #ec38bc;
+   }
+   .logo{
+       width: 50px;
+       height: 50px;
+   }
+   .nombreFestival {
+       background-size: 250% 250%;
+       width: 85%;
+   }
+   .nombreFestival .titulo {
+       font-size: 30px;
+   }
+   .contenedor {
+       width: 70%;
+   }
+   /* // GALERIA */
+   .tituloGaleria {
+       font-size: 20px;
+   }
+   .galeria {
+       width: 80%;
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-template-rows: 120px 120px 120px;
+       gap: 10px 10px;
+   }
+   .galeria div {
+       background-position: 50% 70%;
+   }
+   /* // ARTISTAS */
+   .artistas {
+       font-size: 30px;
+   }
+   .fotosArtistas div {
+       height: 400px;
+   }
+   .fotosArtistas div img {
+       width: 200px;
+       height: 200px;
+   }
+   .fotosArtistas div h3  {
+       font-size: 30px;
+   }
+   .fotosArtistas .monolink img {
+       width: 200px;
+       height: 200px;
+   }
+   /* // FECHAS */
+   .contenedorFechas {
+       width: 100%;
+       height: 90vh;
+       background-position: 45% 35%;
+       font-size: 40px;
+   }
+   /* // COMPRAR */
+   .texto1 {
+       width: 45%;
+   }
+   .texto1 h3 {
+       font-size: 30px;
+   }
+   .texto1 p {
+       font-size: 20px;
+   }
+   .imagen1 {
+       width: 50%;
+   }
+   .imagen2 {
+       width: 45%;
+   }
+   .texto2 {
+       width: 45%;
+   }
+   .texto2 p {
+       font-size: 16px;
+   }
+   .texto2 select {
+       font-size: 16px;
+   }
+   .texto2 .botonComprar {
+       font-size: 16px;
+   }
+   /* // FOOTER */
+   .footer {
+       display: flex;
+       justify-content: space-evenly;
+       flex-direction: column;
+   }
+   .navegacion .menuFooter {
+       margin-left: 0px;
+   }
+   .footer h3 {
+       font-size: 26px;
+       text-align: start;
+   }
+   .footer a {
+       font-size: 20px;
+   }
+   .logoFooter img {
+       width: 50px;
+       height: 50px;
+   }
+   
+}

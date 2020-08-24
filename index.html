@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spacey festival</title>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Squada+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header class="cabecera">
+        <button class="hamburguesa"><ion-icon name="menu-outline"></ion-icon></button>
+        <nav class="navegador">
+            <ul class="menu">
+                <img src="./colorido-golpe-de-cabeza-alien--gena-enojado-by-Vexels.png" alt="logo" class="logo">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#artistas">Artistas</a></li>
+                <li><a href="#fechas">Fechas</a></li>
+                <li><a href="#comprar">Comprar</a></li>
+                <li><a href="./login.html">Ingresar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- INICIO -->
+    <div class="nombreFestival">
+        <h1 class="titulo">SPACEY FESTIVAL</h1>
+    </div>
+    <h2 class="tituloGaleria">Galeria de festivales pasados</h2> 
+    <section id="inicio" class="inicio">   
+        <div class="galeria"> 
+            <div class="uno"></div>
+            <div class="dos"></div>
+            <div class="tres"></div>
+            <div class="cuatro"></div>
+            <div class="cinco"></div>
+        </div>
+    </section>
+    <br>
+    <hr>
+<!-- ARTISTAS --> 
+    <h2 class="artistas" id="artistas">Artistas</h2>
+    <div class="contenedorArtistas">
+        <section class="fotosArtistas">
+            <div class="ben">
+                <img src="./ben.jpg" alt="Ben Bohmer">
+                <h3>Ben <br> Bohmer</h3>           
+            </div>
+            <div class="mome">
+                <img src="./mome.jpg" alt="Mome">
+                <h3>Møme</h3>
+            </div>
+            <div class="artbat">
+                <img src="./arbat.jpg" alt="Artbat">
+                <h3>Artbat</h3>
+            </div>
+            <div class="boris">
+                <img src="./boris.png" alt="Boris Brejcha">
+                <h3>Boris <br> Brejcha</h3>
+            </div>
+            <div class="monolink">
+                <img src="./monolink.png" alt="Monolink">
+                <h3>Monolink</h3>
+            </div>
+        </section>    
+    </div>    
+    <!-- FECHAS -->
+    <br>
+    <hr>
+    <div class="contenedorFechas" id="fechas">
+        <h2>Fechas provisorias 2020</h2>
+        <p> 27, 28 y 29 de noviembre en el Hipódromo de San Isidro.</p>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <!-- COMPRAR -->
+    <div class="comprar" id="comprar">
+        <div class="texto1">
+            <h3>Precios</h3>
+            <p>Precio entrada general por día: $3.990,00</p>
+            <p>Precio entrada VIP por día: $7.990,00</p>
+        </div>
+        <div class="imagen1"></div>
+        <div class="imagen2"></div>
+        <div class="texto2">
+            <p>Seleccione el día</p>
+            <select name="entrada">
+                <option value="Día 1"selected>Día 1</option> 
+                <option value="Día 2">Día 2</option>
+                <option value="Día 3">Día 3</option>
+              </select> 
+              <hr>
+              <p>Seleccione el tipo de entrada</p>
+              <select name="tipoEntrada">
+                <option value="General" selected>General</option> 
+                <option value="VIP">VIP</option>
+              </select>
+              <hr>
+              <p>Seleccione la cantidad de entradas</p>
+              <select name="cantEntrada">
+                <option value="1" selected>1</option> 
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+              </select>
+              <hr>
+              <button class="botonComprar">Comprar</button>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="navegacion">
+            <h3>Navegacion</h3>
+            <ul class="menuFooter">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#artistas">Artistas</a></li>
+                <li><a href="#fechas">Fechas</a></li>
+                <li><a href="#comprar">Comprar</a></li>
+                <li><a href="./login.html">Ingresar</a></li>
+            </ul>
+        </div>
+        <div class="contacto">
+            <h3>Contacto</h3>
+            <ion-icon name="at-outline" class="outline"></ion-icon><a href="">contact_spacey@gmail.com</a>
+        </div>
+        <div class="social"> 
+            <h3>Social</h3>
+            <ion-icon name="logo-facebook" class="logo1"></ion-icon><a href="">Facebook</a>
+            <br>
+            <ion-icon name="logo-instagram" class="logo2"></ion-icon><a href="">Instagram</a>
+            <br>
+            <ion-icon name="logo-twitter" class="logo3"></ion-icon><a href="">Twitter</a>
+            <br>
+            <ion-icon name="logo-youtube" class="logo4"></ion-icon><a href="">Youtube</a>
+        </div>
+        <div class="logoFooter">
+            <img src="./colorido-golpe-de-cabeza-alien--gena-enojado-by-Vexels.png" alt="logo" class="logo">
+        </div>
+    </footer>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+</body>
+</html>
